@@ -8,6 +8,11 @@ It was designed with a Single Activity App concept in mind and is defined by 3 m
 - Destination: a destination on the app, usually a fragment, but a destination can also be an Activity, another navigation graph or sub-graph, and custom destination types are also supported.
 - Action: the connections between the app destinations.
 
+### Demo
+
+<img src="https://user-images.githubusercontent.com/10658016/71170500-6fcc3180-2281-11ea-9b80-79a569a07e6d.gif?raw=true" alt="Home Page" width="300"/>
+</p>
+
 #### Code Setup
 ```
 def nav_version = "2.1.0"

@@ -45,9 +45,9 @@
         tools:layout="@layout/third_fragment">
 
         <argument
-            android:name="fn"
-            android:defaultValue="1"
-            app:argType="string" />
+            android:name="name"
+            android:defaultValue="Hare Krishna"
+            app:argType="integer" />
 
     </fragment>
 </navigation>

@@ -6,9 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.activity_main.*
+import androidx.navigation.fragment.navArgs
 
 class ThirdFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -19,6 +20,6 @@ class ThirdFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        view?.findViewById<TextView>(R.id.tvName)?.text = "Hi ${arguments?.getInt("tn")}"
+        view?.findViewById<TextView>(R.id.tvName)?.text = "Hello ${arguments?.getString("name")}"
     }
 }

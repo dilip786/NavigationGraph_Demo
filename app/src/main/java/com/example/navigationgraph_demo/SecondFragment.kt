@@ -21,8 +21,8 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.button).setOnClickListener {
-            val bundle = bundleOf("tn" to 100)
-            view.findNavController().navigate(R.id.fragmentSecondToThird, bundle)
+           // val bundle = bundleOf("tn" to 100)
+            view.findNavController().navigate(R.id.fragmentSecondToThird)
         }
     }
 }

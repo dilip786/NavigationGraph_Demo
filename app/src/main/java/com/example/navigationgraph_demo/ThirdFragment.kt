@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.activity_main.*
 
 class ThirdFragment : Fragment() {
     override fun onCreateView(
@@ -12,7 +14,11 @@ class ThirdFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         return inflater.inflate(R.layout.third_fragment, null)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        view?.findViewById<TextView>(R.id.tvName)?.text = "Hi ${arguments?.getInt("tn")}"
     }
 }

@@ -19,11 +19,8 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         view.findViewById<Button>(R.id.button).setOnClickListener {
-
             view.findNavController().navigate(R.id.fragmentMainToFirst)
         }
-
     }
 }
